@@ -6,6 +6,7 @@ on:
       - main
       - master
       - GitAction
+      - hurricane
       
   pull_request:
     branches:

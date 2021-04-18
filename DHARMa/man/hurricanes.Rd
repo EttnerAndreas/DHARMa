@@ -12,7 +12,7 @@ A data frame with 93 rows and 14 variables
 https://theoreticalecology.wordpress.com/2021/04/17/hurricanes-and-himmicanes-revisited-with-dharma/
 }
 \usage{
-data(hurricanes)
+{data(hurricanes)}
 }
 \arguments{
 \item{Year.}{Year the hurricanes appeared (1950-2012)}
@@ -42,6 +42,9 @@ data(hurricanes)
 \item{ZMinPressure_A.}{scaled (Minpressure_Updated 2014)}
 
 \item{ZNDAM.}{scaled (NDAM)}
+}
+\value{
+
 }
 \description{
 hurricanes
