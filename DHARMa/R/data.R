@@ -24,6 +24,7 @@
 #' @param ZNDAM. scaled (NDAM)
 #' @return
 #'
+#'
 #' @source https://theoreticalecology.wordpress.com/2021/04/17/hurricanes-and-himmicanes-revisited-with-dharma/
 #' @references Jung et al., PNAS, 2014
 #' @usage{data(hurricanes)}
