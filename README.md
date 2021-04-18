@@ -58,8 +58,7 @@ Below the status of the automatic Travis CI tests on the master branch (if this 
 
 Additionally, we also test via GitHub Actions
 
-[![R-CMD-check](https://github.com/florianhartig/DHARMa/workflows/R-CMD-check/badge.svg)](https://github.com/florianhartig/DHARMa/actions)
-
+[![R-CMD-check](https://github.com/EttnerAndreas/DHARMa/workflows/R-CMD-check/badge.svg)](https://github.com/EttnerAndreas/DHARMa/actions)
 ### Development branches / older releases
 
 To install a specific (older) release, or a particular branch, decide for the version number that you want to install in [https://github.com/florianhartig/DHARMa/releases](https://github.com/florianhartig/DHARMa/releases) (version numbering corresponds to CRAN, but there may be smaller releases that were not pushed to CRAN), or branch and run 
