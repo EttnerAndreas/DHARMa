@@ -16,33 +16,33 @@ stuiff
 data(hurricanes)
 }
 \arguments{
-\item{Year.}{Year the hurricanes appeared (1950-2012)}
+\item{Year}{Year the hurricanes appeared (1950-2012)}
 
-\item{Name.}{Name the hurricanes was named after (name)}
+\item{Name}{Name the hurricanes was named after (name)}
 
-\item{MasFem.}{Rating of the Name, if it is more masculin or feminine (1:11). In the range 1 = very masculine, 11 = very feminine}
+\item{MasFem}{Rating of the Name, if it is more masculin or feminine (1:11). In the range 1 = very masculine, 11 = very feminine}
 
-\item{MinPressure_before.}{Minimum air-pressure (909-1002)}
+\item{MinPressure_before}{Minimum air-pressure (909-1002)}
 
-\item{Minpressure_Updated_2014.}{Minimum airpressure (909-1003)}
+\item{Minpressure_Updated_2014}{Minimum airpressure (909-1003)}
 
-\item{Gender_MF.}{Gender rating binary (male/female). Male = 0, female = 1)}
+\item{Gender_MF}{Gender rating binary (male/female). Male = 0, female = 1)}
 
-\item{Category.}{strength of the hurricane in categories (1:7). (1 = not at all, 7 = very intense)}
+\item{Category}{strength of the hurricane in categories (1:7). (1 = not at all, 7 = very intense)}
 
-\item{alldeaths.}{Deaths counted (1:256)}
+\item{alldeaths}{Deaths counted (1:256)}
 
-\item{NDAM.}{normalized damage in millions (1:75.000). The raw (dollar) amounts of property damage caused by hurricanes were obtained, and the unadjusted dollar amounts were normalized to 2013 monetary values by adjusting them to inflation, wealth and population density}
+\item{NDAM}{normalized damage in millions (1:75.000). The raw (dollar) amounts of property damage caused by hurricanes were obtained, and the unadjusted dollar amounts were normalized to 2013 monetary values by adjusting them to inflation, wealth and population density}
 
-\item{Elapsed_Yrs.}{elapsed since the occurrence of hurricanes (1:63)}
+\item{Elapsed_Yrs}{elapsed since the occurrence of hurricanes (1:63)}
 
-\item{Source.}{MWR/wikipedia ()}
+\item{Source}{MWR/wikipedia ()}
 
-\item{ZMasFem.}{scaled (MasFem)}
+\item{ZMasFem}{scaled (MasFem)}
 
-\item{ZMinPressure_A.}{scaled (Minpressure_Updated 2014)}
+\item{ZMinPressure_A}{scaled (Minpressure_Updated 2014)}
 
-\item{ZNDAM.}{scaled (NDAM)}
+\item{ZNDAM}{scaled (NDAM)}
 }
 \value{
 a dataframe
