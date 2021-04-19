@@ -3,6 +3,7 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/DHARMa)](https://cran.r-project.org/package=DHARMa)
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.0.2-6666ff.svg)](https://cran.r-project.org/)
 [![](https://cranlogs.r-pkg.org/badges/DHARMa)](https://cran.r-project.org/package=DHARMa)
+[![R-CMD-check](https://github.com/EttnerAndreas/DHARMa/workflows/R-CMD-check/badge.svg)](https://github.com/EttnerAndreas/DHARMa/actions)
 
 # DHARMa - Residual Diagnostics for HierARchical Models
 
