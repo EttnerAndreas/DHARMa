@@ -22,8 +22,7 @@
 #' @param ZMinPressure_A scaled (Minpressure_Updated 2014)
 #' @param ZNDAM scaled (NDAM)
 #' @return a dataframe
-#' @usage stuiff
-#'
+
 #' @source https://theoreticalecology.wordpress.com/2021/04/17/hurricanes-and-himmicanes-revisited-with-dharma/
 #' @references Jung et al., PNAS, 2014
 #' @usage data(hurricanes)
