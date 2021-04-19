@@ -3,7 +3,6 @@
 #' This dataset contains hurricanes in the USA between 1950 and 2012 their strength, names ..., see parameter for more informations.
 #' @name hurricanes
 #' @title hurricanes dataset residual analysis
-#' @aliases hurricanes
 #' @docType data
 #' @keywords hurricanes, DHARMa, simulateResiduals,
 #'
