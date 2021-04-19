@@ -6,7 +6,7 @@ data(hurricanes)
 
 library(glmmTMB)
 originalModelGAM = glmmTMB(alldeaths ~ scale(MasFem) *
-                             (scale(Minpressure_Updated.2014) + scale(NDAM)),
+                             (scale(Minpressure_Updated_2014) + scale(NDAM)),
                            data = hurricanes, family = nbinom2)
 
 # Residual checks with DHARMa
