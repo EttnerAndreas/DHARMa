@@ -13,7 +13,7 @@ https://theoreticalecology.wordpress.com/2021/04/17/hurricanes-and-himmicanes-re
 \usage{
 stuiff
 
-{data(hurricanes)}
+data(hurricanes)
 }
 \arguments{
 \item{Year.}{Year the hurricanes appeared (1950-2012)}
