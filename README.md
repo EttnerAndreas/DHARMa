@@ -3,6 +3,7 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/DHARMa)](https://cran.r-project.org/package=DHARMa)
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.0.2-6666ff.svg)](https://cran.r-project.org/)
 [![](https://cranlogs.r-pkg.org/badges/DHARMa)](https://cran.r-project.org/package=DHARMa)
+[![R-CMD-check](https://github.com/EttnerAndreas/DHARMa/workflows/R-CMD-check/badge.svg)](https://github.com/EttnerAndreas/DHARMa/actions)
 
 # DHARMa - Residual Diagnostics for HierARchical Models
 
@@ -58,8 +59,7 @@ Below the status of the automatic Travis CI tests on the master branch (if this 
 
 Additionally, we also test via GitHub Actions
 
-[![R-CMD-check](https://github.com/florianhartig/DHARMa/workflows/R-CMD-check/badge.svg)](https://github.com/florianhartig/DHARMa/actions)
-
+[![R-CMD-check](https://github.com/EttnerAndreas/DHARMa/workflows/R-CMD-check/badge.svg)](https://github.com/EttnerAndreas/DHARMa/actions)
 ### Development branches / older releases
 
 To install a specific (older) release, or a particular branch, decide for the version number that you want to install in [https://github.com/florianhartig/DHARMa/releases](https://github.com/florianhartig/DHARMa/releases) (version numbering corresponds to CRAN, but there may be smaller releases that were not pushed to CRAN), or branch and run 

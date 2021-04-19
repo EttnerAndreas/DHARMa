@@ -5,14 +5,10 @@ on:
     branches:
       - main
       - master
-      - GitAction
-      - hurricane
-      
   pull_request:
     branches:
       - main
       - master
-      - hurricane
 
 name: R-CMD-check
 
@@ -44,16 +40,15 @@ jobs:
           r-version: ${{ matrix.config.r }}
 
       - uses: r-lib/actions/setup-pandoc@v1
-      
+
       - name: Query dependencies
         run: |
-          setwd("DHARMa")
           install.packages('remotes')
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), "../.github/depends.Rds", version = 2)
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), "../.github/R-version")
+          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
         shell: Rscript {0}
 
-      - name: Cache R packages 
+      - name: Restore R package cache
         if: runner.os != 'Windows'
         uses: actions/cache@v2
         with:
@@ -64,7 +59,6 @@ jobs:
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
-          cd DHARMa
           while read -r cmd
           do
             eval sudo $cmd
@@ -72,25 +66,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          setwd("DHARMa")
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
         shell: Rscript {0}
-        
-      - name: Check_II
-        env:
-          _R_CHECK_CRAN_INCOMING_REMOTE_: false
-          CI: true
-        run: |
-          rcmdcheck::rcmdcheck("DHARMa", args = c("--no-multiarch", "--no-manual"), error_on = "warning", check_dir = "check")
-        shell: Rscript {0}
-        
+
       - name: Check
         env:
           _R_CHECK_CRAN_INCOMING_REMOTE_: false
-          CI: true
         run: |
-          rcmdcheck::rcmdcheck("DHARMa", args = c("--no-manual", "--as-cran"), error_on = "warning", check_dir = "check")
+          options(crayon.enabled = TRUE)
+          rcmdcheck::rcmdcheck(args = c("--no-manual", "--as-cran"), error_on = "warning", check_dir = "check")
         shell: Rscript {0}
 
       - name: Upload check results
